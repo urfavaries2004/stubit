@@ -1,0 +1,35 @@
+body.dark {
+  --form-button-gradient-light: linear-gradient(to right, #535C91, #6e6f8f);
+  --form-button-hover-light: #888bbf;
+}
+
+.hours, .minutes, .seconds{
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    width: 50px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .start-timer, .reset-timer {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #a0c1ff, #e9bfff);
+    color: #fff;
+  }
+
+  body.dark .start-timer, body.dark .reset-timer{
+    background: var(--form-button-gradient-light);
+  }
+
+  body.dark .start-timer:hover, body.dark .reset-timer:hover {
+    background-color: var(--form-button-hover-light);
+  }
+  
+  .timeleft > h2 {
+    margin-top: 20px;
+    font-size: 24px;
+  }

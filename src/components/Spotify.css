@@ -1,0 +1,55 @@
+.spotify-iframe {
+    border-radius: 20px;
+    border-color: #d780fa;
+  }
+  
+  .spotify-iframe:hover {
+    background-color: #d780fa;
+    cursor: pointer;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .spotify-button {
+    border-radius: 50%;
+    padding: 0;
+    margin:0;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .spotify-button:hover {
+    background-color: #d780fa;
+    cursor: pointer;
+    padding: 0;
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pulse-button {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background: transparent;
+  }
+  
+  
+  .btn-container {
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+  
+  }
+  
+  .btn-box btn-small-box {
+    display: inline-flex;
+  }
+  
+  .btn-box btn-large-box {
+    display: inline-flex;
+  }

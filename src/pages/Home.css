@@ -1,0 +1,152 @@
+/* Wrapper */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+  margin: 0;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Container */
+.container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: flex-start;
+  width: 100%;
+  animation: fadeInUp 1s ease-out;
+}
+
+.left {
+  position: relative;
+  flex-direction: column;
+  justify-items: flex-start;
+  margin: 0;  /* Ensure no margin */
+  width: 50%; /* Ensure it takes the full width of the container */
+  /* Add padding to the left for alignment */
+  animation: fadeInLeft 1s ease-out;
+  text-align: left;
+}
+
+/* Headings */
+.left>h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease-out;
+}
+
+.left>h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-out;
+  }
+
+/* Paragraph */
+.left>p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.right {
+  position: absolute;
+  width: 40%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+/* CTA Button */
+.cta-button {
+  padding: 12px 25px;
+  background: var(--form-button-gradient-light); /* Button gradient */
+  color: white;
+  border: 2px solid black; /* Black outline */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeInUp 1s ease-out;
+}
+
+.cta-button:hover {
+  background-color: var(--form-button-hover-light); /* Button hover color */
+  transform: scale(1.05);
+}
+
+/* Divider */
+.divider {
+  width: 90%;
+  height: 1px;
+  align-self: flex-start;
+  background: var(--form-button-gradient-light);
+  margin: 40px 0;
+  animation: fadeInDown 1s ease-out;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  align-self: stretch;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .divider {
+    width: 90%;
+  }
+
+  .cards-container {
+    justify-content: center;
+  }
+}
